@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pkill -f 'python3 ./main.py'
+sudo python3 ./clear.py
+
+pkill -2 sushi

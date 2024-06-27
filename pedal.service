@@ -1,0 +1,12 @@
+[Unit]
+Description=Start and stop the guitar pedal service
+After=sushi.service
+ConditionPathExists=/dev/audio_evl
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/mind/guitarpedal/main.py
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+./stop
+sleep 1
+sushi -r --multicore-processing=4 -c ./sushi_config.json &
+sleep 1
+sudo python3 ./main.py &
+sleep 3
